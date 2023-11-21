@@ -23,7 +23,7 @@
 
 <script>
 import CourseComponent from "./CourseComponent.vue";
-import { store } from "../../../data/store";
+import { store } from "../../../../data/store";
 export default {
   name: "MainSecondSection",
   components: {
@@ -38,7 +38,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../../../assets/style/partials/variables" as *;
+@use "../../../../assets/style/partials/variables" as *;
 .external {
   background-color: $color-white-secondary;
 }
