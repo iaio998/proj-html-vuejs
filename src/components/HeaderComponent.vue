@@ -1,10 +1,15 @@
 <template>
   <header>
-    <nav class="container">
+    <nav class="container py-4 px-5">
       <NavbarComponent />
     </nav>
-    <div class="jumbotron container text-center">
-      <h2>Hi</h2>
+    <div class="jumbotron container text-center py-2">
+      <h2 class="fs-2">Learn At Your Own Pace</h2>
+      <p class="m-0">Get teamed up with people of the same will.</p>
+      <button>Get started for free</button>
+      <div class="img-cont">
+        <img src="/images-2/video-screen.png" alt="" />
+      </div>
     </div>
   </header>
 </template>
@@ -26,5 +31,16 @@ header {
   color: $color-white;
   background-color: $color-purple;
   // background-image: url("../../public/images");
+  .img-cont {
+    width: 800px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+      transform: translate(0, 130px);
+      border: 20px solid $color-white;
+      border-radius: 20px;
+    }
+  }
 }
 </style>
