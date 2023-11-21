@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="container py-5">
+      <!-- SECTION 1 -->
       <div class="row justify-content-center py-5">
         <div class="col-12 text-center w-50 py-5">
           <h3 class="py-5">
@@ -11,12 +12,14 @@
           <p>/Founder & CEO</p>
         </div>
       </div>
+      <!-- SECTION2  -->
       <div class="row">
         <div class="col-3 text-center px-2" v-for="el in datas">
           <h3>{{ el.val }}</h3>
           <p>{{ el.name }}</p>
         </div>
       </div>
+      <!-- SECTION 3 -->
       <div class="row py-5">
         <div class="col-6 d-flex">
           <div class="mb-5 pe-4">
@@ -107,7 +110,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../../assets/style/partials/variables" as *;
+@use "../../../assets/style/partials/variables" as *;
 .fa-check {
   color: $color-marker;
 }

@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@use "../assets/style/partials/variables" as *;
+@use "../../assets/style/partials/variables" as *;
 header {
   color: $color-white;
   background-color: $color-purple;
