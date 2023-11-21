@@ -19,16 +19,32 @@
       </div>
       <div class="row py-5">
         <div class="col-6 d-flex">
-          <div class="mb-5 px-5">
-            <CardComponentTop />
-            <CardComponentTop />
+          <div class="mb-5 pe-4">
+            <CardComponentTop class="my-5" />
+            <CardComponentBot />
           </div>
-          <div class="mt-5 px-5">
-            <CardComponentTop />
-            <CardComponentTop />
+          <div class="mt-5 ps-4">
+            <CardComponentTop class="my-5" />
+            <CardComponentBot />
           </div>
         </div>
-        <div class="col-6"></div>
+        <div class="col-6 p-5 d-flex flex-column justify-content-center">
+          <div class="w-75">
+            <p>TOGETHER WE CAN CREATE</p>
+            <h3 class="fs-1">
+              Services We <span>Can Provide</span> For My Clients.
+            </h3>
+            <ul>
+              <li v-for="el in services">
+                <i class="fa-solid fa-check pe-3"></i>
+                {{ el.text }}
+              </li>
+            </ul>
+            <button type="button" class="btn btn-primary rounded-2 fs-bold">
+              Search
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -36,10 +52,12 @@
 
 <script>
 import CardComponentTop from "./CardComponentTop.vue";
+import CardComponentBot from "./CardComponentBot.vue";
 export default {
   name: "MainFirstSection",
   components: {
     CardComponentTop,
+    CardComponentBot,
   },
   data() {
     return {
@@ -47,22 +65,40 @@ export default {
         {
           name: "FINISHED SESSIONS",
           val: "1.926",
-          datasId: 1,
+          serviceId: 1,
         },
         {
           name: "ENROLLED LEARNERS",
           val: "3.902+",
-          datasId: 2,
+          serviceId: 2,
         },
         {
           name: "ONLINE INSTRUCTORS",
           val: "200",
-          datasId: 3,
+          serviceId: 3,
         },
         {
           name: "SATISFACTION RATE",
           val: "100%",
-          datasId: 4,
+          serviceId: 4,
+        },
+      ],
+      services: [
+        {
+          text: "Select & customize courses to your preferences",
+          serviceId: 1,
+        },
+        {
+          text: "Partecipate in events to join others",
+          serviceId: 2,
+        },
+        {
+          text: "Change the tutor and make the arrangements",
+          serviceId: 3,
+        },
+        {
+          text: "Get the desidered certificate delivered at house",
+          serviceId: 4,
         },
       ],
     };
@@ -70,4 +106,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use "../../assets/style/partials/variables" as *;
+.fa-check {
+  color: $color-marker;
+}
+</style>
