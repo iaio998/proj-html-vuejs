@@ -2,11 +2,16 @@
   <div>
     <div class="container text-center py-5">
       <h3 class="fs-1">Why People Talk About <span>MaxCoach</span>?</h3>
-      <div class="row flex-nowrap overflow-hidden py-5">
+      <div
+        class="row flex-nowrap overflow-hidden py-5"
+        ref="slider"
+        @click="scrollRight()"
+        @dblclick="scrollLeft()"
+      >
         <div
           class="anim col-12 py-5"
           v-for="el in store.testimonials"
-          :id="el.idTestimonial"
+          :key="el.idTestimonial"
         >
           <div class="d-flex justify-content-center align-items-center gap-4">
             <div class="img-cont">
@@ -39,10 +44,43 @@ export default {
   data() {
     return {
       store,
-      activeId: "",
+      activeId: 1,
     };
   },
-  methods: {},
+  methods: {
+    scrollRight() {
+      let slider = this.$refs.slider;
+      if (this.activeId !== this.store.testimonials.length) {
+        this.activeId++;
+        slider.scrollBy({
+          left: slider.offsetWidth,
+          behavior: "smooth",
+        });
+      } else {
+        this.activeId = 1;
+        slider.scrollBy({
+          left: -9999,
+          behavior: "smooth",
+        });
+      }
+    },
+    scrollLeft() {
+      let slider = this.$refs.slider;
+      if (this.activeId !== 1) {
+        this.activeId--;
+        slider.scrollBy({
+          left: -slider.offsetWidth,
+          behavior: "smooth",
+        });
+      } else {
+        this.activeId = this.store.testimonials.length;
+        slider.scrollBy({
+          left: 9999,
+          behavior: "smooth",
+        });
+      }
+    },
+  },
 };
 </script>
 
@@ -63,8 +101,7 @@ export default {
   height: 100px;
 
   img {
-    width: 100%;
-    object-fit: cover;
+    max-width: 100%;
   }
 }
 </style>
