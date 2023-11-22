@@ -6,7 +6,7 @@
         <a href="#">{{ el.text }} </a>
       </li>
     </ul>
-    <ul class="d-flex">
+    <ul class="d-flex py-3">
       <li class="pe-3 fs-4" v-for="el in socials">
         <a class="hyperlink" href="#">
           <i :class="el.fontAwesome"></i>

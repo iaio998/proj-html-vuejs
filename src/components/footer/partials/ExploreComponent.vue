@@ -1,7 +1,7 @@
 <template>
   <div class="text-start">
     <h5 class="py-2">Explore</h5>
-    <div class="d-flex justify-content-between">
+    <div class="d-flex gap-5">
       <ul>
         <li class="py-2" v-for="el in this.exploreLeft">
           <a href="#">{{ el.text }} </a>
