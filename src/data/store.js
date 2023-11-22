@@ -113,4 +113,30 @@ export const store = reactive({
       logo: "/images/client-logo-colored-06.png",
     },
   ],
+  services: [
+    {
+      serviceId: 1,
+      fontAwesome: "fa-solid fa-flag",
+      title: "Idea Discussion",
+      text: "Get teamed up with the specialists who work and teach coding for years at famous universities.",
+    },
+    {
+      serviceId: 2,
+      fontAwesome: "fa-solid fa-gear",
+      title: "Web Developement",
+      text: "Learn to start building a webpage from scratch. You decide your own pace, course and speed.",
+    },
+    {
+      serviceId: 3,
+      fontAwesome: "fa-solid fa-life-ring",
+      title: "System Administration",
+      text: "Learners are encouraged to study the mechanism and structure of system administration.",
+    },
+    {
+      serviceId: 4,
+      fontAwesome: "fa-solid fa-desktop",
+      title: "Graphic Design",
+      text: "Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.",
+    },
+  ],
 });
