@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="container text-center py-5">
-      <h3 class="fs-1">Why People Talk About <span>MaxCoach</span>?</h3>
+      <h3 class="fs-1 fw-bold">
+        Why People Talk About <span class="fw-normal marked">MaxCoach</span>?
+      </h3>
       <div
         class="row flex-nowrap overflow-hidden py-5"
         ref="slider"
@@ -18,8 +20,8 @@
               <img :src="el.image" :alt="el.name" />
             </div>
             <div class="text-start ps-5 w-50">
-              <h3 class="mb-3 fs-2">{{ el.text }}</h3>
-              <p>{{ el.name }}</p>
+              <h3 class="mb-3 fs-2 fw-normal">{{ el.text }}</h3>
+              <p class="name fw-bold pt-4">{{ el.name }}</p>
               <p>{{ el.job }}</p>
             </div>
           </div>
@@ -85,6 +87,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@use "../../../../assets/style/partials/variables" as *;
+.marked {
+  color: $color-marker;
+}
+.name {
+  color: $color-black-secondary;
+}
+p {
+  color: $color-grey;
+}
 .img-cont {
   width: 200px;
   height: 200px;

@@ -1,8 +1,10 @@
 <template>
-  <div class="external">
+  <div class="external py-5">
     <div class="container text-center py-5">
       <p>CHOOSE A COURSE TO GET STARTED</p>
-      <h3>Latest Featured <span>Courses</span></h3>
+      <h3 class="fs-1 fw-bold">
+        Latest Featured <span class="marked fw-normal">Courses</span>
+      </h3>
       <div class="row g-5 py-5">
         <div v-for="el in store.courses" class="col-6">
           <CourseComponent
@@ -43,6 +45,12 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../../../assets/style/partials/variables" as *;
+.marked {
+  color: $color-marker;
+}
+p {
+  color: $color-grey;
+}
 .external {
   background-color: $color-white-secondary;
 }

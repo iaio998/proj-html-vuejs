@@ -28,7 +28,7 @@ export default {
 <style lang="scss" scoped>
 .card {
   border: 0;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.356);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.185);
 }
 .img-cont {
   width: 200px;

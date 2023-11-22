@@ -2,7 +2,9 @@
   <div class="external">
     <div class="container text-center py-5">
       <p>ENJOY READING ON MAXCOACH</p>
-      <h3>Latest On <span>Our Blogs</span></h3>
+      <h3 class="fs-1 fw-bold">
+        Latest On <span class="marked fw-normal">Our Blogs</span>
+      </h3>
       <div class="row px-5 py-5">
         <CardComponent
           v-for="el in datas"
@@ -57,6 +59,12 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../../../assets/style/partials/variables" as *;
+.marked {
+  color: $color-marker;
+}
+p {
+  color: $color-grey;
+}
 .external {
   background-color: $color-white-secondary;
 }

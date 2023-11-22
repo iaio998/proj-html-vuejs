@@ -23,5 +23,9 @@ button {
   box-shadow: 0;
   padding: 15px 40px;
   border-radius: 8px;
+  transition: 0.25s ease;
+  &:hover {
+    background-color: $color-purple;
+  }
 }
 </style>

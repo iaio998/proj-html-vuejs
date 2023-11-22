@@ -4,19 +4,19 @@
       <!-- SECTION 1 -->
       <div class="row justify-content-center py-5">
         <div class="col-12 text-center w-50 py-5">
-          <h3 class="py-5">
+          <h3 class="fw-bold py-5">
             Let passion and determination be the guide along the way and develop
             at your own pace that's comfortable
           </h3>
-          <h4>Fannie Moreno</h4>
-          <p>/Founder & CEO</p>
+          <h5 class="founder fw-bold">FANNIE MORENO</h5>
+          <p class="second-text">/Founder & CEO</p>
         </div>
       </div>
       <!-- SECTION2  -->
       <div class="row">
         <div class="col-3 text-center px-2" v-for="el in datas">
-          <h3>{{ el.val }}</h3>
-          <p>{{ el.name }}</p>
+          <h3 class="marked fs-1 fw-bolder">{{ el.val }}</h3>
+          <p class="fw-bold">{{ el.name }}</p>
         </div>
       </div>
       <!-- SECTION 3 -->
@@ -60,7 +60,8 @@
           <div class="w-75">
             <p>TOGETHER WE CAN CREATE</p>
             <h3 class="fs-1">
-              Services We <span>Can Provide</span> For My Clients.
+              Services We <span class="marked fw-normal">Can Provide</span> For
+              My Clients.
             </h3>
             <ul>
               <li v-for="el in services">
@@ -165,6 +166,19 @@ export default {
 
 <style lang="scss" scoped>
 @use "../../../../assets/style/partials/variables" as *;
+.founder {
+  font-size: 1em;
+}
+.second-text {
+  font-size: 0.9em;
+}
+p,
+i {
+  color: $color-grey;
+}
+.marked {
+  color: $color-marker;
+}
 .fa-check {
   color: $color-marker;
 }
