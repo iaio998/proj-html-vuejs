@@ -21,6 +21,7 @@
       </div>
       <!-- SECTION 3 -->
       <div class="row py-5">
+        <!-- LEFT SIDE -->
         <div class="col-6 d-flex">
           <div class="mb-5 pe-4">
             <CardComponentTop class="my-5" />
@@ -31,6 +32,8 @@
             <CardComponentBot />
           </div>
         </div>
+
+        <!-- RIGHT SIDE -->
         <div class="col-6 p-5 d-flex flex-column justify-content-center">
           <div class="w-75">
             <p>TOGETHER WE CAN CREATE</p>
@@ -43,9 +46,9 @@
                 {{ el.text }}
               </li>
             </ul>
-            <button type="button" class="btn btn-primary rounded-2 fs-bold">
-              Search
-            </button>
+            <div class="mt-4">
+              <ButtonComponent :text="this.txtButton" />
+            </div>
           </div>
         </div>
       </div>
@@ -56,14 +59,17 @@
 <script>
 import CardComponentTop from "./CardComponentTop.vue";
 import CardComponentBot from "./CardComponentBot.vue";
+import ButtonComponent from "../../../ButtonComponent.vue";
 export default {
   name: "MainFirstSection",
   components: {
     CardComponentTop,
     CardComponentBot,
+    ButtonComponent,
   },
   data() {
     return {
+      txtButton: "Get started for free",
       datas: [
         {
           name: "FINISHED SESSIONS",

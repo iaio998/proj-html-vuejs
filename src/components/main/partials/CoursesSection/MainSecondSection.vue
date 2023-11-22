@@ -14,23 +14,27 @@
           />
         </div>
       </div>
-      <button type="button" class="btn btn-primary rounded-2 fs-bold">
-        Search
-      </button>
+      <div class="mt-4">
+        <ButtonComponent :text="this.txtButton" :class="this.txtButton2" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import CourseComponent from "./CourseComponent.vue";
+import ButtonComponent from "../../../ButtonComponent.vue";
 import { store } from "../../../../data/store";
 export default {
   name: "MainSecondSection",
   components: {
     CourseComponent,
+    ButtonComponent,
   },
   data() {
     return {
+      txtButton: "View all courses",
+      txtButton2: "fa-solid fa-arrow-right ps-2",
       store,
     };
   },

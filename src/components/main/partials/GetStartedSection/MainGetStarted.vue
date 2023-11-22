@@ -4,15 +4,26 @@
       <div class="py-3">
         <p>Start today for getting <span>Online Certification</span></p>
         <h3>You can be your own guiding star with our help!</h3>
-        <button class="btn btn-primary my-5">Get started now</button>
+        <div class="mt-4">
+          <ButtonComponent :text="this.txtButton" />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import ButtonComponent from "../../../ButtonComponent.vue";
 export default {
   name: "MainGetStarted",
+  components: {
+    ButtonComponent,
+  },
+  data() {
+    return {
+      txtButton: "Get started for free",
+    };
+  },
 };
 </script>
 

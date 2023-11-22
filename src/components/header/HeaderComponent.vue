@@ -6,7 +6,9 @@
     <div class="jumbotron container text-center py-2">
       <h2 class="fs-2">Learn At Your Own Pace</h2>
       <p class="m-0">Get teamed up with people of the same will.</p>
-      <ButtonComponent class="mt-4" />
+      <div class="mt-4">
+        <ButtonComponent :text="this.txtButton" />
+      </div>
       <div class="img-cont d-flex">
         <img src="/images-2/video-screen.png" alt="" />
       </div>
@@ -23,6 +25,11 @@ export default {
   components: {
     NavbarComponent,
     ButtonComponent,
+  },
+  data() {
+    return {
+      txtButton: "Get started for free",
+    };
   },
 };
 </script>
