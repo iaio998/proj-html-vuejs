@@ -1,0 +1,26 @@
+<template>
+  <button>{{ text }}</button>
+</template>
+
+<script>
+export default {
+  name: "ButtonComponent",
+  props: {
+    text: String,
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+@use "../assets/style/partials/variables" as *;
+
+button {
+  font-weight: bold;
+  color: white;
+  background-color: $color-marker;
+  border: 0;
+  box-shadow: 0;
+  padding: 15px 40px;
+  border-radius: 8px;
+}
+</style>

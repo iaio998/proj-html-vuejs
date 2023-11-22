@@ -6,7 +6,7 @@
     <div class="jumbotron container text-center py-2">
       <h2 class="fs-2">Learn At Your Own Pace</h2>
       <p class="m-0">Get teamed up with people of the same will.</p>
-      <button>Get started for free</button>
+      <ButtonComponent class="mt-4" />
       <div class="img-cont d-flex">
         <img src="/images-2/video-screen.png" alt="" />
       </div>
@@ -16,11 +16,13 @@
 
 <script>
 import NavbarComponent from "./partials/NavbarComponent.vue";
+import ButtonComponent from "../ButtonComponent.vue";
 
 export default {
   name: "HeaderComponent",
   components: {
     NavbarComponent,
+    ButtonComponent,
   },
 };
 </script>
