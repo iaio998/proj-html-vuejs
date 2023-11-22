@@ -5,7 +5,9 @@
         <div class="col-6">
           <AddressComponent />
         </div>
-        <div class="col-3"></div>
+        <div class="col-3">
+          <ExploreComponent />
+        </div>
         <div class="col-3"></div>
       </div>
     </div>
@@ -14,9 +16,13 @@
 
 <script>
 import AddressComponent from "./partials/AddressComponent.vue";
+import ExploreComponent from "./partials/ExploreComponent.vue";
 export default {
   name: "FooterComponent",
-  components: { AddressComponent },
+  components: {
+    AddressComponent,
+    ExploreComponent,
+  },
 };
 </script>
 

@@ -1,13 +1,13 @@
 <template>
   <div class="text-start">
-    <h5>Address</h5>
-    <p>{{ this.address }}</p>
-    <p>{{ this.contact }}</p>
-    <p>
-      <a href="#">{{ this.email }}</a>
-    </p>
+    <h5 class="py-2">Address</h5>
+    <ul>
+      <li class="py-2" v-for="el in this.datas">
+        <a href="#">{{ el.text }} </a>
+      </li>
+    </ul>
     <ul class="d-flex">
-      <li class="pe-4 fs-4" v-for="el in socials">
+      <li class="pe-3 fs-4" v-for="el in socials">
         <a class="hyperlink" href="#">
           <i :class="el.fontAwesome"></i>
         </a>
@@ -21,9 +21,23 @@ export default {
   name: "AddressComponent",
   data() {
     return {
-      address: "382 NE 191st St # 87394 Miami, FL 33179-3899",
-      contact: "+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)",
-      email: "support@maxcoach.com",
+      datas: [
+        {
+          dataId: 1,
+          name: "Address",
+          text: "382 NE 191st St # 87394 Miami, FL 33179-3899",
+        },
+        {
+          dataId: 2,
+          name: "Contact",
+          text: "+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)",
+        },
+        {
+          dataId: 3,
+          name: "Email",
+          text: "382 NE 191st St # 87394 Miami, FL 33179-3899",
+        },
+      ],
       socials: [
         {
           socialId: 1,
