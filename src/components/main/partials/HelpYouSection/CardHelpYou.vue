@@ -1,10 +1,10 @@
 <template>
   <div class="col-3 text-start py-5">
     <div>
-      <p class="fs-1"><i :class="font"></i></p>
+      <div class="fs-1 py-3"><i :class="font"></i></div>
     </div>
-    <h4>{{ title }}</h4>
-    <p>
+    <h4 class="fw-bold">{{ title }}</h4>
+    <p class="fw-semibold">
       {{ text }}
     </p>
   </div>
@@ -21,4 +21,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use "../../../../assets/style/partials/variables" as *;
+p {
+  color: $color-grey;
+}
+</style>

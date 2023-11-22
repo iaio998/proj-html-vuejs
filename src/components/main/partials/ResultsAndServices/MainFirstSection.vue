@@ -4,7 +4,7 @@
       <!-- SECTION 1 -->
       <div class="row justify-content-center py-5">
         <div class="col-12 text-center w-50 py-5">
-          <h3 class="fw-bold py-5">
+          <h3 class="fw-bold fs-2 py-5">
             Let passion and determination be the guide along the way and develop
             at your own pace that's comfortable
           </h3>

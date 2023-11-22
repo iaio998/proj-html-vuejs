@@ -11,7 +11,7 @@
         @dblclick="scrollLeft()"
       >
         <div
-          class="anim col-12 py-5"
+          class="col-12 py-5"
           v-for="el in store.testimonials"
           :key="el.idTestimonial"
         >
@@ -109,8 +109,8 @@ p {
   }
 }
 .clients {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 
   img {
     max-width: 100%;
