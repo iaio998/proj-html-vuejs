@@ -24,12 +24,34 @@
         <!-- LEFT SIDE -->
         <div class="col-6 d-flex">
           <div class="mb-5 pe-4">
-            <CardComponentTop class="my-5" />
-            <CardComponentBot />
+            <CardComponentTop
+              :id="this.cards[0].id"
+              :image="this.cards[0].image"
+              :text="this.cards[0].text"
+              :title="this.cards[0].title"
+              class="my-5"
+            />
+            <CardComponentBot
+              :id="this.cards[1].id"
+              :image="this.cards[1].image"
+              :text="this.cards[1].text"
+              :title="this.cards[1].title"
+            />
           </div>
           <div class="mt-5 ps-4">
-            <CardComponentTop class="my-5" />
-            <CardComponentBot />
+            <CardComponentTop
+              :id="this.cards[2].id"
+              :image="this.cards[2].image"
+              :text="this.cards[2].text"
+              :title="this.cards[2].title"
+              class="my-5"
+            />
+            <CardComponentBot
+              :id="this.cards[3].id"
+              :image="this.cards[3].image"
+              :text="this.cards[3].text"
+              :title="this.cards[3].title"
+            />
           </div>
         </div>
 
@@ -70,6 +92,32 @@ export default {
   data() {
     return {
       txtButton: "Get started for free",
+      cards: [
+        {
+          cardId: 1,
+          image: "images/home-6-service-image-01.png",
+          title: "Graphic Design",
+          text: "Have a passion for graphics and arts? Show your talents with confidence and self-assertiveness.",
+        },
+        {
+          cardId: 2,
+          image: "images/home-6-service-image-03.png",
+          title: "Business Administration",
+          text: "Learners are encouraged to study the mechanism and structure of system administration.",
+        },
+        {
+          cardId: 3,
+          image: "images/home-6-service-image-02.png",
+          title: "Idea Discussion",
+          text: "Get teamed up with the specialists who work and teach coding for years at famous universities.",
+        },
+        {
+          cardId: 4,
+          image: "images/home-6-service-image-04.png",
+          title: "Web Development",
+          text: "Learn to start building a webpage from scratch. You decide your own pace, course and speed.",
+        },
+      ],
       datas: [
         {
           name: "FINISHED SESSIONS",
