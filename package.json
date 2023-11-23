@@ -12,7 +12,8 @@
     "axios": "^1.6.2",
     "bootstrap": "^5.3.2",
     "swiper": "^11.0.5",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "vue-intersection": "^2.0.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",

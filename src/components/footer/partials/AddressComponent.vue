@@ -35,7 +35,7 @@ export default {
         {
           dataId: 3,
           name: "Email",
-          text: "382 NE 191st St # 87394 Miami, FL 33179-3899",
+          text: "support@maxcoach.com",
         },
       ],
       socials: [

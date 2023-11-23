@@ -10,7 +10,7 @@
     <div class="col-10">
       <div class="d-flex justify-content-end align-items-center">
         <ul class="d-flex px-2">
-          <li class="menu fs-5 mx-2 py-1" v-for="el in menu">
+          <li class="menu position-relative fs-5 mx-2 py-1" v-for="el in menu">
             {{ el.name }} <i class="fa-solid fa-chevron-down"></i>
           </li>
         </ul>
@@ -95,13 +95,16 @@ export default {
 <style lang="scss" scoped>
 @use "../../../assets/style/partials/variables" as *;
 .menu {
-  &:hover {
-    border-bottom: 1px solid white;
-  }
+  border-bottom: 1px solid transparent;
+
   .fa-chevron-down {
     font-size: 0.5em;
   }
+  &:hover {
+    border-bottom: 1px solid white;
+  }
 }
+
 #shop-cont {
   #counter {
     display: flex;
@@ -151,7 +154,7 @@ export default {
     width: 50px;
     background-color: transparent;
     color: $color-marker;
-
+    transition: 0.3s ease;
     &:hover {
       background-color: $color-marker;
       color: white;
