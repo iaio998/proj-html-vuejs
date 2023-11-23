@@ -13,7 +13,8 @@
     "bootstrap": "^5.3.2",
     "swiper": "^11.0.5",
     "vue": "^3.3.4",
-    "vue-intersection": "^2.0.1"
+    "vue-intersection": "^2.0.1",
+    "vue3-autocounter": "^1.0.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",

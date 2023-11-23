@@ -14,8 +14,29 @@
       </div>
       <!-- SECTION2  -->
       <div class="row">
+        <!-- <div class="col-3 text-center px-2" v-for="el in this.datas"> -->
+        <!-- <vue3-autocounter
+            ref="counter"
+            :startAmount="0"
+            :endAmount="el.val"
+            :duration="3"
+            :suffix="el.suffix"
+            decimalSeparator="."
+            :autoinit="true"
+          />
+          <p class="fw-bold">{{ el.name }}</p>
+        </div> -->
         <div class="col-3 text-center px-2" v-for="el in datas">
-          <h3 class="marked fs-1 fw-bolder">{{ el.val }}</h3>
+          <h3 class="marked fs-1 fw-bolder">
+            <vue3-autocounter
+              :startAmount="0"
+              :endAmount="el.valore"
+              separator="."
+              :suffix="el.suffix"
+              :duration="2"
+              :autoinit="true"
+            />
+          </h3>
           <p class="fw-bold">{{ el.name }}</p>
         </div>
       </div>
@@ -83,12 +104,16 @@
 import CardComponentTop from "./CardComponentTop.vue";
 import CardComponentBot from "./CardComponentBot.vue";
 import ButtonComponent from "../../../ButtonComponent.vue";
-export default {
+import { defineComponent } from "vue";
+import Vue3autocounter from "vue3-autocounter";
+
+export default defineComponent({
   name: "MainFirstSection",
   components: {
     CardComponentTop,
     CardComponentBot,
     ButtonComponent,
+    "vue3-autocounter": Vue3autocounter,
   },
   data() {
     return {
@@ -122,22 +147,26 @@ export default {
       datas: [
         {
           name: "FINISHED SESSIONS",
-          val: "1.926",
+          valore: 1926,
+          suffix: "",
           serviceId: 1,
         },
         {
           name: "ENROLLED LEARNERS",
-          val: "3.902+",
+          valore: 3902,
+          suffix: "+",
           serviceId: 2,
         },
         {
           name: "ONLINE INSTRUCTORS",
-          val: "200",
+          valore: 200,
+          suffix: "",
           serviceId: 3,
         },
         {
           name: "SATISFACTION RATE",
-          val: "100%",
+          valore: 100,
+          suffix: "%",
           serviceId: 4,
         },
       ],
@@ -161,7 +190,7 @@ export default {
       ],
     };
   },
-};
+});
 </script>
 
 <style lang="scss" scoped>
