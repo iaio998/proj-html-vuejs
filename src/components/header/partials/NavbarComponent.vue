@@ -28,18 +28,15 @@
             </div>
           </li>
         </ul>
-        <div class="d-flex">
-          <div class="input-group mx-2">
-            <input
-              placeholder="Search..."
-              type="text"
-              class="form-control rounded-1 p-0"
-              aria-label="Sizing example input"
-              aria-describedby="inputGroup-sizing-default"
-            />
-          </div>
-          <button type="button" class="btn btn-primary rounded-2 fs-bold">
-            Search
+        <div class="d-flex input-cont">
+          <input
+            placeholder="Search..."
+            type="text"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+          />
+          <button type="button">
+            <i class="fw-bold fs-5 fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
       </div>
@@ -135,7 +132,32 @@ export default {
   align-items: center;
   justify-content: center;
 }
+.input-cont {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  input {
+    border: 0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    &:focus {
+      outline: none;
+    }
+  }
+  button {
+    border: 0;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    color: $color-marker;
 
+    &:hover {
+      background-color: $color-marker;
+      color: white;
+    }
+  }
+}
 .img-cont {
   width: 150px;
   img {
