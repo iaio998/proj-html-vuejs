@@ -1,8 +1,10 @@
 <template>
   <header>
-    <nav class="container py-4 px-5">
-      <NavbarComponent />
-    </nav>
+    <div>
+      <nav class="container py-4 px-5">
+        <NavbarComponent />
+      </nav>
+    </div>
     <div class="jumbotron container text-center py-2">
       <h2 class="fw-bold">Learn At Your Own Pace!</h2>
       <p class="m-0 py-2 fw-bold">
