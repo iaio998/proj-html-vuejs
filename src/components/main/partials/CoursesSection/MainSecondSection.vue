@@ -5,6 +5,7 @@
       <h3 class="fs-1 fw-bold">
         Latest Featured <span class="marked fw-normal">Courses</span>
       </h3>
+      <!-- CARD COURSE COMPONENT -->
       <div class="row g-5 py-5">
         <div v-for="el in store.courses" class="col-6">
           <CourseComponent
@@ -16,6 +17,7 @@
           />
         </div>
       </div>
+      <!-- BUTTON COMPONENT -->
       <div class="mt-4">
         <ButtonComponent :text="this.txtButton" :class="this.txtButton2" />
       </div>

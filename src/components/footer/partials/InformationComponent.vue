@@ -1,6 +1,7 @@
 <template>
   <div class="text-start">
     <h5 class="py-2">Information</h5>
+    <!-- INFORMATIONS -->
     <ul>
       <li class="py-2" v-for="el in this.information">
         <a href="#">{{ el.text }} </a>

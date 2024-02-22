@@ -1,5 +1,6 @@
 <template>
   <div class="card" style="width: 18rem">
+    <!-- CARD TOP -->
     <div>
       <div class="card-body">
         <h5>{{ title }}</h5>

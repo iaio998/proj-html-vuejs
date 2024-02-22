@@ -1,11 +1,13 @@
 <template>
   <div class="text-start">
     <h5 class="py-2">Address</h5>
+    <!-- ADDRESSES -->
     <ul>
       <li class="py-2" v-for="el in this.datas">
         <a href="#">{{ el.text }} </a>
       </li>
     </ul>
+    <!-- HYPERLINKS -->
     <ul class="d-flex py-3">
       <li class="pe-3 fs-4" v-for="el in socials">
         <a class="hyperlink" href="#">

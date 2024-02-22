@@ -1,13 +1,16 @@
 <template>
   <div class="card" style="width: 18rem">
-    <div class="img-cont">
-      <img :src="image" class="card-img-top" :alt="title" />
-    </div>
-    <div class="card-body">
-      <h5>{{ title }}</h5>
-      <p class="card-text">
-        {{ text }}
-      </p>
+    <!-- CARD BOT -->
+    <div>
+      <div class="img-cont">
+        <img :src="image" class="card-img-top" :alt="title" />
+      </div>
+      <div class="card-body">
+        <h5>{{ title }}</h5>
+        <p class="card-text">
+          {{ text }}
+        </p>
+      </div>
     </div>
   </div>
 </template>

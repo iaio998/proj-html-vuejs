@@ -2,11 +2,13 @@
   <div class="text-start">
     <h5 class="py-2">Explore</h5>
     <div class="d-flex gap-5">
+      <!-- EXPLORE LEFT -->
       <ul>
         <li class="py-2" v-for="el in this.exploreLeft">
           <a href="#">{{ el.text }} </a>
         </li>
       </ul>
+      <!-- EXPLORE RIGHT -->
       <ul>
         <li class="py-2" v-for="el in this.exploreRight">
           <a href="#">{{ el.text }} </a>

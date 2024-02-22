@@ -1,18 +1,22 @@
 <template>
   <header>
+    <!-- NAVBAR -->
     <div>
       <nav class="container py-4 px-5">
         <NavbarComponent />
       </nav>
     </div>
+    <!-- JUMBOTRON -->
     <div class="jumbotron container text-center py-2">
       <h2 class="fw-bold">Learn At Your Own Pace!</h2>
       <p class="m-0 py-2 fw-bold">
         Get teamed up with people of the same will.
       </p>
+      <!-- BUTTON -->
       <div class="mt-4">
         <button>{{ this.txtButton }}</button>
       </div>
+      <!-- IMAGES -->
       <div class="position-relative">
         <img
           id="img-left"
@@ -21,7 +25,7 @@
           alt=""
         />
         <div class="img-cont d-flex">
-          <!-- <svg
+          <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1000 100"
             preserveAspectRatio="none"
@@ -40,7 +44,7 @@
               class="elementor-shape-fill"
               d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"
             ></path>
-          </svg> -->
+          </svg>
           <img src="/images-2/video-screen.png" alt="" />
         </div>
         <img

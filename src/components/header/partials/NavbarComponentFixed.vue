@@ -1,6 +1,6 @@
 <template>
+  <!-- LOGO -->
   <div class="row justify-content-between align-items-center">
-    <!-- LOGO -->
     <div class="col-2">
       <h1>
         <div class="img-cont">
@@ -8,9 +8,9 @@
         </div>
       </h1>
     </div>
+    <!-- MENU -->
     <div class="col-10">
       <div class="d-flex justify-content-end align-items-center">
-        <!-- MENU -->
         <ul class="d-flex px-2">
           <li class="menu position-relative fs-5 mx-2 py-1" v-for="el in menu">
             {{ el.name }} <i class="fa-solid fa-chevron-down"></i>
@@ -49,7 +49,7 @@
 
 <script>
 export default {
-  name: "NavbarComponent",
+  name: "NavbarComponentFixed",
   data() {
     return {
       menu: [

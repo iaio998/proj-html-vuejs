@@ -2,12 +2,15 @@
   <footer class="external py-5">
     <div class="container">
       <div class="row">
+        <!-- ADDRESS -->
         <div class="col-6">
           <AddressComponent />
         </div>
+        <!-- EXPLORE -->
         <div class="col-3">
           <ExploreComponent />
         </div>
+        <!-- INFORMATIONS -->
         <div class="col-3">
           <InformationComponent />
         </div>

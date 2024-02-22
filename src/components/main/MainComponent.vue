@@ -1,10 +1,16 @@
 <template>
   <main>
+    <!-- RESULT AND SERVICES-->
     <MainFirstSection />
+    <!-- COURSES -->
     <MainSecondSection />
+    <!-- CLIENTS -->
     <MainThirdSection />
+    <!-- BLOG -->
     <MainFourthSection />
+    <!-- HELP YOU -->
     <MainFifthSection />
+    <!-- GET STARTED -->
     <MainGetStarted />
   </main>
 </template>
